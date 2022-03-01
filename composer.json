@@ -1,0 +1,45 @@
+{
+    "name": "laravel-notification-channels/clickatell",
+    "description": "Clickatell notifications driver",
+    "keywords": ["laravel", "notifications", "clickatell", "sms"],
+    "homepage": "https://github.com/laravel-notification-channels/clickatell",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Etienne Marais",
+            "email": "hello@etiennemarais.co.za",
+            "homepage": "https://etiennemarais.github.io/",
+            "role": "Developer"
+        },
+        {
+            "name": "Jesus Ignacio Ortiz Beltran",
+            "email": "jesus@agenciaparadoja.com",
+            "homepage": "https://agenciaparadoja.com",
+            "role": "Developer"
+        },
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "arcturial/clickatell": "^3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Clickatell\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Clickatell\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
